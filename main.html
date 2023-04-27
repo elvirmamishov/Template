@@ -14,7 +14,7 @@
 <div class="main">
 
     <div class="turn-back">
-        <button class="turn-back-btn">
+        <button type="button" class="turn-back-btn">
             <img src="assets/arrow-left.svg" alt="">
         </button>
     </div>
@@ -82,6 +82,15 @@
 
     </div>
 
+    <div class="footer">
+        <div class="share">
+            <button class="share-btn">
+                <img src="assets/Paper Upload.svg" alt="">
+                Qəbzi paylaş
+            </button>
+        </div>
+    </div>
+
 </div>
 
 
@@ -98,6 +107,7 @@
         --bg-color:#E5E5E5;
         --gray-font:#A1A7BC;
         --dark-font:#000;
+        --btn-color:#6CC654;
     }
     .turn-back{
         margin-top:50px;
@@ -169,6 +179,29 @@
         height: 20px;
         background-color:var(--bg-color);
         border-radius: 50%;
+    }
+    .footer{
+        margin:50px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .share-btn{
+        background-color:var(--btn-color);
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 14px;
+        border-radius:20px;
+        height:48px;
+        width: 320px;
+        align-items: center;
+        justify-content: center;
+        padding:0 0 8px;
+    }
+    .share-btn img{
+        transform: translate(0,7px);
+        margin:0 5px 0 0;
     }
 </style>
 
